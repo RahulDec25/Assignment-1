@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!--Bio Data-->
+
+    <h1>My Bio Data</h1>
+    
+    <form action="/" method="POST">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="First Name">FirstName:</label>
+            <input type="text" id="First Name" placeholder="First Name" required>
+
+            <label for="Last Name">LastName:</label>
+            <input type="Last Name" id="Last Name" placeholder="Last Name" required>
+
+            <br>
+            <br>
+            Male:
+             <input type="radio" name="gender">
+            Female:
+             <input type="radio" name="gender">
+            Others:
+            <input type="radio" name="gender">
+
+            <br>
+            <br>
+            Date Of Birth:
+            <input type="date">
+
+            <br>
+            <br>
+            
+            <label for="E-Mail">E-Mail:</label>
+            <input type="E-Mail" id="E-Mail" placeholder="E-Mail" required>
+            <br>
+            <br>
+            
+            <label for="Phone">Phone:</label>
+            <input type="tel" maxlength="10" id="Phone" placeholder="+91" required>
+            <br>
+            <br>
+            <label for="Height">Height:</label>
+            <input type="Height" maxlength="10" id="Height" placeholder="Height in Feet" required>
+
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Education</legend>
+            <label for="text">School Name:</label>
+            <input type="text"maxlength="50" id="text" placeholder="School Name" required>
+            <br>
+            <br>
+
+            <label for="Class Name">Class:</label>
+            <input type="text"maxlength="2" id="Class Name" placeholder="Class Name" required>
+            <br>
+            <br>
+
+            Stream:
+            <select>
+                <option>Stream</option>
+                <option>Science</option>
+                <option>Commerce</option>
+                <option>Humanities</option>                
+            </select>
+              <br>
+              <br>
+
+
+            <label for="file">Marksheet</label>
+            <input type="file" name="file" id="file">
+    
+
+
+        
+        </fieldset>
+        <br>
+        <button>Submit</button>
+    </form>
+    <br>
+    <br>
+
+    <!--Time Table-->
+
+    <h1>This is Time Table</h1>
+
+    <table bgcolor="#CCCCFF"border="5" cellspacing="10" cellpadding="10">
+
+        <thead>
+            <tr>
+               <th>Days/Periods</th>
+               <th>1</th>
+               <th>2</th>
+               <th>3</th>
+               <th> </th>
+               <th>4</th>
+               <th>5</th>
+               <th>6</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr>
+                <td>Monday</td>
+                <td>science</td>
+                <td>English</td>
+                <td>Hindi</td>
+                <td rowspan="6">R<br><br>E<br><br>C<br><br>E<br><br>S<br><br>S </td>
+                <td>Maths</td>
+                <td>Games</td>
+                <td>Moral science</td>
+            </tr>
+            <tr>
+                <td>Tuesday</td>
+                <td>science</td>
+                <td>English</td>
+                <td>Hindi</td>
+                
+                <td>Maths</td>
+                <td>Games</td>
+                <td>Moral science</td>
+                
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td>science</td>
+                <td>English</td>
+                <td rowspan="3">Hindi</td>
+               
+                <td>Maths</td>
+                <td>Games</td>
+                <td>Moral science</td>
+            
+            </tr>
+            <tr>
+                <td>Thursday</td>
+                <td>science</td>
+                <td>English</td>
+                
+                <td>Maths</td>
+                <td>Games</td>
+                <td>Moral science</td>
+                
+            </tr>
+            <tr>
+                <td>Friday</td>
+                <td>science</td>
+                <td>English</td>
+                
+                <td>Maths</td>
+                <td>Games</td>
+                <td>Moral science</td>
+            </tr>
+            <tr>
+                <td>Saturday</td>
+                <td>science</td>
+                <td>English</td>
+                <td>Hindi</td>
+        
+                <td colspan="3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Maths</td>
+                
+            </tr>
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="8">This is Class VIII</th>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
