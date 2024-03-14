@@ -1,0 +1,21 @@
+class Solution {
+public:
+    int MaxA(vector<int>& h) {
+        int L = 0;
+        int R = h.size() - 1;
+        int MaxA = 0;
+
+        while (l < R) {
+            int PresentArea = min(h[L], h[R]) * (R - L);
+            MaxA = max(MaxA, PresentArea);
+
+            if (h[L] < h[R]) {
+                L++;
+            } else {
+                R--;
+            }
+        }
+
+        return MaxA;
+    }
+};
